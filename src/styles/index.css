@@ -1,0 +1,82 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+  background: linear-gradient(125deg, #778899, #4682b4, #dda0dd, #696969);
+  background-size: 400%;
+  animation: my 15s infinite;
+  color: #fff;
+  font-size: 14px;
+}
+
+:global(#root) {
+  height: 75%;
+  width: 75%;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  background: rgba(255, 255, 255, 0.8);
+  z-index: 1;
+}
+
+:global(#root::before) {
+  content: " ";
+  position: absolute;
+  top: -5px;
+  right: -5px;
+  bottom: -5px;
+  left: -5px;
+  z-index: -1;
+  background: linear-gradient(
+    235deg,
+    #ff0000 0%,
+    #ff00ff 11%,
+    #ffff00 22%,
+    #00ff00 33%,
+    #00ffff 44%
+  );
+}
+
+:global(#root::after) {
+  content: " ";
+  position: absolute;
+  top: -5px;
+  right: -5px;
+  bottom: -5px;
+  left: -5px;
+  z-index: -2;
+  filter: blur(85px) brightness(100%);
+  background: linear-gradient(
+    235deg,
+    #ff0000 0%,
+    #ff00ff 11%,
+    #ffff00 22%,
+    #00ff00 33%,
+    #00ffff 44%
+  );
+}
+
+:global(#app) {
+  height: 100%;
+  width: 100%;
+  background: #282c34;
+}
+
+@keyframes my {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}

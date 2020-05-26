@@ -1,0 +1,82 @@
+{
+  "name": "near-electorn",
+  "version": "1.0.0",
+  "description": "Near-Electorn",
+  "keywords": [
+    "react",
+    "electorn",
+    "typescript",
+    "eslint",
+    "webpack",
+    "css modules",
+    "emotion"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yangjiagongzi/near-electorn.git"
+  },
+  "author": "Near",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/yangjiagongzi/near-electorn/issues"
+  },
+  "homepage": "https://github.com/yangjiagongzi/near-electorn#readme",
+  "private": true,
+  "main": "main.js",
+  "scripts": {
+    "webpack-start": "webpack-dev-server --env=dev",
+    "webpack-build": "webpack --env=pro",
+    "start": "webpack-dev-server --env=dev",
+    "start-main": "electron . --dev",
+    "start-pro": "webpack --env=pro && electron .",
+    "build": "webpack --env=pro && electron ."
+  },
+  "dependencies": {
+    "core-js": "^2.6.10",
+    "lodash": "^4.17.15",
+    "react": "^16.10.2",
+    "react-dom": "^16.10.2",
+    "react-redux": "^7.1.3",
+    "redux": "^4.0.5",
+    "redux-thunk": "^2.3.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.6.4",
+    "@babel/preset-env": "^7.6.3",
+    "@babel/preset-react": "^7.6.3",
+    "@types/react": "^16.9.11",
+    "@types/react-dom": "^16.9.3",
+    "@types/react-redux": "^7.1.5",
+    "@types/react-router-dom": "^5.1.3",
+    "@typescript-eslint/eslint-plugin": "^2.6.0",
+    "@typescript-eslint/parser": "^2.6.0",
+    "awesome-typescript-loader": "^5.2.1",
+    "babel-loader": "^8.0.6",
+    "clean-webpack-plugin": "^3.0.0",
+    "css-loader": "^3.2.0",
+    "electron": "^7.1.3",
+    "emotion": "^10.0.23",
+    "eslint": "^6.6.0",
+    "eslint-config-prettier": "^6.5.0",
+    "eslint-loader": "^3.0.2",
+    "eslint-plugin-prettier": "^3.1.1",
+    "eslint-plugin-react": "^7.16.0",
+    "file-loader": "^4.2.0",
+    "happypack": "^5.0.1",
+    "html-webpack-plugin": "^3.2.0",
+    "mini-css-extract-plugin": "^0.8.0",
+    "minimist": "^1.2.0",
+    "prettier": "^1.18.2",
+    "react-router-dom": "^5.1.2",
+    "style-loader": "^1.0.0",
+    "thread-loader": "^2.1.3",
+    "typescript": "^3.6.4",
+    "uglifyjs-webpack-plugin": "^2.2.0",
+    "webpack": "^4.41.2",
+    "webpack-bundle-analyzer": "^3.6.0",
+    "webpack-cli": "^3.3.7",
+    "webpack-dev-server": "^3.8.2",
+    "webpack-merge": "^4.2.2",
+    "webpack-parallel-uglify-plugin": "^1.1.2"
+  }
+}
