@@ -1,8 +1,9 @@
 {
-  "name": "near-electorn",
+  "name": "edison-email",
   "version": "1.0.0",
-  "description": "Near-Electorn",
+  "description": "edison-email",
   "keywords": [
+    "email",
     "react",
     "electorn",
     "typescript",
@@ -12,15 +13,10 @@
     "emotion"
   ],
   "repository": {
-    "type": "git",
-    "url": "git+https://github.com/yangjiagongzi/near-electorn.git"
+    "type": "git"
   },
   "author": "Near",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/yangjiagongzi/near-electorn/issues"
-  },
-  "homepage": "https://github.com/yangjiagongzi/near-electorn#readme",
   "private": true,
   "main": "main.js",
   "scripts": {
