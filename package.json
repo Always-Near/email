@@ -28,6 +28,7 @@
     "build": "webpack --env=pro && electron ."
   },
   "dependencies": {
+    "axios": "^0.21.4",
     "core-js": "^2.6.10",
     "lodash": "^4.17.15",
     "react": "^16.10.2",

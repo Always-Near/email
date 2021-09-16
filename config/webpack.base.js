@@ -18,16 +18,7 @@ module.exports = {
   resolve: {
     extensions: ['.js', '.json', '.jsx', '.ts', '.tsx'],
     alias: {
-      actions: `${setting.srcPath}/actions/`,
-      components: `${setting.srcPath}/components/`,
-      sources: `${setting.srcPath}/sources/`,
-      stores: `${setting.srcPath}/stores/`,
-      styles: `${setting.srcPath}/styles/`,
-      config: `${setting.srcPath}/config/`,
-      router: `${setting.srcPath}/router/`,
-      containers: `${setting.srcPath}/containers/`,
-      reducers: `${setting.srcPath}/reducers/`,
-      store: `${setting.srcPath}/store/`
+      '~': `${setting.srcPath}/`
     }
   },
   module: {
@@ -182,8 +173,7 @@ module.exports = {
   plugins: [
     new HtmlWebpackPlugin({
       template: setting.templatePath,
-      showErrors: true,
-      favicon: setting.faviconPath
+      showErrors: true
     }),
     new HappyPack({
       //用id来标识 happypack处理那里类文件

@@ -25,16 +25,7 @@
     "noEmit": true,
     "jsx": "react",
     "paths": {
-      "actions/*": ["src/actions/*"],
-      "components/*": ["src/components/*"],
-      "sources/*": ["src/sources/*"],
-      "stores/*": ["src/stores/*"],
-      "styles/*": ["src/styles/*"],
-      "config/*": ["src/config/*"],
-      "router/*": ["src/router/*"],
-      "containers/*": ["src/containers/*"],
-      "reducers/*": ["src/reducers/*"],
-      "store/*": ["src/store/*"],
+      "~/*": ["src/*"],
     }
   },
   "include": ["src"],

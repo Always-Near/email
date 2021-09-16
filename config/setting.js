@@ -10,7 +10,6 @@ const port = 8080
 const host = '0.0.0.0'
 const publicPath = '/'
 const templatePath = path.join(srcPath, 'index.html')
-const faviconPath = path.join(srcPath, 'favicon.ico')
 const cpuSize = os.cpus().length
 
 module.exports = {
@@ -19,7 +18,6 @@ module.exports = {
   assetsRoot,
   publicPath,
   templatePath,
-  faviconPath,
   port,
   host,
   cpuSize
